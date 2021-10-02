@@ -8,7 +8,7 @@ import News from './News';
 
 const {Title} = Typography;
 const Homepage = () => {
-    const {data, isFetching} = useGetCryptosQuery();
+    const {data, isFetching} = useGetCryptosQuery(10);
     if(isFetching) return 'Loading.....'
     const globalState = data?.data?.stats
     
